@@ -230,7 +230,7 @@ class WebRTCSimpleServer(object):
 def main():
     parser = argparse.ArgumentParser(formatter_class=argparse.ArgumentDefaultsHelpFormatter)
     # See: host, port in https://docs.python.org/3/library/asyncio-eventloop.html#asyncio.loop.create_server
-    parser.add_argument('--addr', default='35.154.231.37', help='Address to listen on (default: all interfaces, both ipv4 and ipv6)')
+    parser.add_argument('--addr', default='172.31.11.124', help='Address to listen on (default: all interfaces, both ipv4 and ipv6)')
     parser.add_argument('--port', default=6504, type=int, help='Port to listen on')
     parser.add_argument('--keepalive-timeout', dest='keepalive_timeout', default=30, type=int, help='Timeout for keepalive (in seconds)')
     parser.add_argument('--cert-path', default=os.path.dirname(__file__))
