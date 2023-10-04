@@ -234,7 +234,7 @@ def main():
     parser.add_argument('--port', default=6504, type=int, help='Port to listen on')
     parser.add_argument('--keepalive-timeout', dest='keepalive_timeout', default=30, type=int, help='Timeout for keepalive (in seconds)')
     parser.add_argument('--cert-path', default=os.path.dirname(__file__))
-    parser.add_argument('--disable-ssl', default='Disable ssl', help='Disable ssl', action='store_true')
+    parser.add_argument('--disable-ssl', default=True, help='Disable ssl', action='store_true')
     parser.add_argument('--health', default='/health', help='Health check route')
     parser.add_argument('--restart-on-cert-change', default=False, dest='cert_restart', action='store_true', help='Automatically restart if the SSL certificate changes')
 
