@@ -1,7 +1,6 @@
 //require our websocket library 
 var WebSocketServer = require('ws').Server; 
 var serverConfig = {
-   host: "192.168.100.202", // Replace with your server's IP address
    port: 6504
  };
 //creating a websocket server at port 9090 
